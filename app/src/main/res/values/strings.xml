@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">The Podcaster</string>
+    <string name="home">Home</string>
+    <string name="library">Library</string>
+    <string name="search">Search</string>
+    <string name="history">History</string>
+    <string name="favourites">Favourites</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="following">Following</string>
+    <string name="recommended">Recommended</string>
+    <string name="dash_separator">- %s</string>
+    <string name="share">Share</string>
+    <string name="share_text">Hi there, check this great podcast episode: %1$s - publisher - %2$s</string>
+    <plurals name="number_of_episodes">
+        <item quantity="one">%d episode</item>
+        <item quantity="other">%d episodes</item>
+    </plurals>
+
+
+    <string name="date_format">MMM d, yyyy</string>
+    <string name="episode_duration_format">%1$dh %2$dm %3$ds</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+    </string>
+    <string name="podcast_name">Podcast Name</string>
+    <string name="downloading">Downloading episode %1$s</string>
+    <string name="download_failed">Download failed</string>
+    <string name="play_description">Play</string>
+    <string name="pause_description">Pause</string>
+    <string name="download_successful">Download Complete!</string>
+    <string name="followed_successfully">Show added to following library</string>
+    <string name="unFollowed_successfully">Show removed from following library</string>
+    <string name="shows">Shows</string>
+    <string name="episodes">Episodes</string>
+    <string name="play_pause_image_description">Play and Pause current podcast</string>
+    <string name="like_an_episode_image_description">Like/Deslike an episode</string>
+    <string name="close_podcast_detail_image_description">Close podcast detail screen</string>
+    <string name="follow_podcast_image_description">save podcast to following library</string>
+    <string name="share_podcast_image_description">Share podcast</string>
+    <string name="download_episode_image_description">download current episode</string>
+    <string name="not_playing">Not Playing</string>
+    <string name="now_playing">Now Playing</string>
+</resources>

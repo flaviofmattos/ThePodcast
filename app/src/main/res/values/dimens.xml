@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_gutter">4dp</dimen>
+    <dimen name="default_gutter">8dp</dimen>
+    <dimen name="large_gutter">16dp</dimen>
+    <dimen name="xlarge_gutter">24dp</dimen>
+    <dimen name="xxlarge_gutter">32dp</dimen>
+</resources>

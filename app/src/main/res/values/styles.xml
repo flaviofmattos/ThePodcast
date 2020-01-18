@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryLightColor</item>
+        <item name="android:statusBarColor">@color/secondaryDarkColor</item>
+    </style>
+
+
+
+    <style name="AppTheme.CollapsingToolbar" parent="@style/Widget.Design.CollapsingToolbar">
+        <item name="android:background">@color/primaryColor</item>
+        <item name="contentScrim">@color/primaryColor</item>
+        <item name="expandedTitleTextAppearance">@style/TextAppearance.Podcast.Headline4</item>
+        <item name="collapsedTitleTextAppearance">@style/TextAppearance.Podcast.Headline6</item>
+        <item name="expandedTitleMarginStart">@dimen/large_gutter</item>
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed|snap</item>
+    </style>
+
+    <style name="AppTheme.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/primaryColor</item>
+        <item name="itemIconTint">@color/secondaryDarkColor</item>
+        <item name="itemTextColor">@color/secondaryDarkColor</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/secondaryDarkColor</item>
+    </style>
+
+    <style name="TextAppearance.Podcast.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">@color/secondaryDarkColor</item>
+    </style>
+    <style name="TextAppearance.Podcast.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/secondaryDarkColor</item>
+    </style>
+    <style name="TextAppearance.Podcast.MediaControl.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style>
+    <style name="TextAppearance.Podcast.MediaControl.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="TextAppearance.Podcast.SearchResult.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <style name="Widget.Podcast.SeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">@color/primaryColor</item>
+        <item name="android:progressTint">@color/primaryColor</item>
+        <item name="android:colorControlActivated">@color/primaryColor</item>
+    </style>
+
+
+
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph" app:startDestination="@id/recommendedPodcastFragment">
+
+    <fragment android:id="@+id/recommendedPodcastFragment"
+              android:name="com.myproject.thepodcast.view.recommended.RecommendedPodcastFragment"
+              android:label="fragment_recommended_podcast"
+              tools:layout="@layout/fragment_recommended_podcast">
+        <action android:id="@+id/action_recommendedPodcastFragment_to_episodeListFragment"
+                app:destination="@id/episodeListFragment"/>
+    </fragment>
+    <fragment android:id="@+id/librarySelectionFragment"
+              android:name="com.myproject.thepodcast.view.library.LibrarySelectionFragment"
+              android:label="fragment_library_selection"
+              tools:layout="@layout/fragment_library_selection">
+        <action android:id="@+id/action_librarySelectionFragment_to_libraryEpisodeListFragment"
+                app:destination="@id/libraryEpisodeListFragment"/>
+    </fragment>
+    <fragment android:id="@+id/searchFragment"
+              android:name="com.myproject.thepodcast.view.search.SearchFragment"
+              android:label="fragment_search" tools:layout="@layout/fragment_search">
+        <action android:id="@+id/action_searchFragment_to_episodeListFragment"
+                app:destination="@id/episodeListFragment"/>
+    </fragment>
+    <fragment android:id="@+id/episodeListFragment"
+              android:name="com.myproject.thepodcast.view.EpisodeListFragment"
+              android:label="fragment_list_episode" tools:layout="@layout/fragment_list_episode"/>
+    <fragment android:id="@+id/libraryEpisodeListFragment"
+              android:name="com.myproject.thepodcast.view.library.LibraryEpisodeListFragment"
+              android:label="fragment_library_list_episode"
+              tools:layout="@layout/fragment_library_list_episode">
+        <action android:id="@+id/action_libraryEpisodeListFragment_to_episodeListFragment"
+                app:destination="@id/episodeListFragment"/>
+    </fragment>
+</navigation>

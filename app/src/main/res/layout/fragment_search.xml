@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       android:id="@+id/nestedScrollView"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/tv_auto_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="@dimen/default_gutter"
+            android:layout_marginBottom="@dimen/default_gutter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <include android:id="@+id/podcast_items"
+                 layout="@layout/podcast_search_result"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/default_gutter"
+                 android:layout_marginEnd="@dimen/default_gutter"/>
+
+        <View
+            android:id="@+id/search_result_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/xlarge_gutter"
+            android:layout_marginStart="@dimen/large_gutter"
+            android:layout_marginEnd="@dimen/large_gutter"
+            android:layout_marginBottom="@dimen/xlarge_gutter"
+            android:background="@color/primaryDarkColor"
+            android:visibility="gone"
+        />
+        
+        <include android:id="@+id/episode_items"
+                 layout="@layout/episode_search_result"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/default_gutter"
+                 android:layout_marginEnd="@dimen/default_gutter"
+                 android:layout_marginBottom="@dimen/default_gutter"/>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
